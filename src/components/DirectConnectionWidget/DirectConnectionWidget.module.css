@@ -1,0 +1,24 @@
+.directConnectionWidget {
+	text-align: center;
+	margin: calc(19px * var(--scale)) 0;
+}
+
+.directConnectionWidget div {
+	margin: 0 auto;
+	width: min-content;
+}
+
+.directConnectionWidget label {
+	padding-bottom: calc(6px * var(--scale));
+}
+
+.directConnectionWidget h2 {
+	margin-bottom: calc(69px * var(--scale));
+}
+
+.directConnectionWidget nav {
+	display: flex;
+	flex-direction: column;
+	gap: calc(4px * var(--scale));
+	margin-top: var(--direct-connection-buttons-margin-top);
+}

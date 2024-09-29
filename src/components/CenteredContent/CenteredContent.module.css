@@ -1,0 +1,4 @@
+.centeredContent {
+	margin: 0 auto;
+	width: calc(320px * var(--scale));
+}

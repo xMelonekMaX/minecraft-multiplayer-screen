@@ -1,0 +1,197 @@
+@font-face {
+	font-family: "Minecraftia";
+	src: url("assets/fonts/minecraftia.eot");
+	src: url("assets/fonts/minecraftia.eot?#iefix") format("embedded-opentype"),
+		url("assets/fonts/minecraftia.woff2") format("woff2"),
+		url("assets/fonts/minecraftia.woff") format("woff"),
+		url("assets/fonts/minecraftia.ttf") format("truetype");
+	font-weight: normal;
+	font-style: normal;
+	font-display: swap;
+}
+
+@font-face {
+	font-family: "Minecraftia";
+	src: url("assets/fonts/minecraftia_bold.eot");
+	src: url("assets/fonts/minecraftia_bold.eot?#iefix")
+			format("embedded-opentype"),
+		url("assets/fonts/minecraftia_bold.woff2") format("woff2"),
+		url("assets/fonts/minecraftia_bold.woff") format("woff"),
+		url("assets/fonts/minecraftia_bold.ttf") format("truetype");
+	font-weight: bold;
+	font-style: normal;
+	font-display: swap;
+}
+
+:root {
+	--color: #fff;
+	--shadow-color: #3f3f3f;
+
+	color: var(--color);
+	background-color: #221811;
+
+	text-rendering: optimizeLegibility;
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+	image-rendering: pixelated;
+	-webkit-tap-highlight-color: transparent;
+	-webkit-user-select: none;
+	user-select: none;
+
+	word-spacing: 2px;
+
+	--scale: 1;
+	--text-shadow: 1px;
+	--text-size: 8px;
+	--background-size: 32px;
+	--large-button-width: 200px;
+	--button-height: 20px;
+	--header-box-shadow: 0 2px 4px #000;
+	--footer-box-shadow: 0 -2px 4px #000;
+	--direct-connection-buttons-margin-top: 21vh;
+	--edit-server-buttons-margin-top: 18vh;
+	--delete-confirmation-buttons-margin-top: 14vh;
+	--player-count-padding-top: 3px;
+	--server-name-padding-top: 2.5px;
+}
+
+@media screen and (min-width: 640px) {
+	:root {
+		word-spacing: 3px;
+
+		--scale: 2;
+		--text-shadow: 2px;
+		--text-size: 16px;
+		--header-box-shadow: 0 5px 6px #000;
+		--footer-box-shadow: 0 -5px 6px #000;
+		--direct-connection-buttons-margin-top: 18vh;
+		--edit-server-buttons-margin-top: 10vh;
+		--delete-confirmation-buttons-margin-top: 12vh;
+		--player-count-padding-top: 5px;
+		--server-name-padding-top: 4.5px;
+	}
+}
+
+@media screen and (min-width: 960px) and (min-height: 720px) {
+	:root {
+		word-spacing: 5px;
+
+		--scale: 3;
+		--text-shadow: 3px;
+		--text-size: 24px;
+		--header-box-shadow: 0 7px 8px #000;
+		--footer-box-shadow: 0 -7px 8px #000;
+		--direct-connection-buttons-margin-top: 15vh;
+		--edit-server-buttons-margin-top: 7vh;
+		--player-count-padding-top: 7px;
+		--server-name-padding-top: 6.5px;
+	}
+}
+
+@media screen and (min-width: 1280px) and (min-height: 960px) {
+	:root {
+		word-spacing: 8px;
+
+		--scale: 4;
+		--text-shadow: 4px;
+		--text-size: 32px;
+		--header-box-shadow: 0 9px 9px #000;
+		--footer-box-shadow: 0 -9px 9px #000;
+		--direct-connection-buttons-margin-top: 14vh;
+		--edit-server-buttons-margin-top: 3vh;
+		--server-name-padding-top: 9px;
+	}
+}
+
+body {
+	font-family: "Minecraftia";
+	font-size: var(--text-size);
+	text-shadow: var(--shadow-color) var(--text-shadow) var(--text-shadow);
+
+	background-image: url("assets/textures/options_background.png");
+	background-size: calc(var(--background-size) * var(--scale));
+	margin: 0;
+}
+
+#root {
+	width: 100vw;
+	height: 100vh;
+	overflow: auto;
+}
+
+button,
+input[type="text"] {
+	font-family: inherit;
+	font-size: inherit;
+	word-spacing: inherit;
+}
+
+input[type="text"] {
+	border-radius: 0;
+}
+
+button {
+	color: inherit;
+	text-shadow: inherit;
+	padding: 0;
+}
+
+h1,
+h2,
+h3,
+p {
+	margin: 0;
+	font-weight: 300;
+	font-size: inherit;
+}
+
+a {
+	color: inherit;
+	text-decoration: inherit;
+}
+
+label {
+	text-align: left;
+	display: block;
+	color: #a0a0a0;
+	text-shadow: #282828 var(--text-shadow) var(--text-shadow);
+}
+
+input[type="text"] {
+	box-sizing: border-box;
+	border: var(--text-shadow) solid #a0a0a0;
+	background-color: #000;
+	width: calc(var(--large-button-width) * var(--scale));
+	height: calc(var(--button-height) * var(--scale));
+	padding: 0;
+	padding-top: calc(1px * var(--scale));
+	padding-left: calc(3px * var(--scale));
+	color: #e0e0e0;
+	text-shadow: #383838 var(--text-shadow) var(--text-shadow);
+}
+
+input[type="text"]:focus {
+	outline: none;
+	border: var(--text-shadow) solid #fff;
+}
+
+img,
+a {
+	-webkit-user-drag: none;
+	-khtml-user-drag: none;
+	-moz-user-drag: none;
+	-o-user-drag: none;
+	-ms-user-drag: none;
+	-user-drag: none;
+}
+
+::selection {
+	background-color: unset;
+	color: unset;
+}
+
+input[type="text"]::selection {
+	background-color: #fff;
+	color: #1f1fff;
+	text-shadow: var(--text-shadow) var(--text-shadow) 0 #c7c7ff;
+}

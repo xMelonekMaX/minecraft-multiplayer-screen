@@ -1,0 +1,10 @@
+.playerCount {
+	color: #aaaaaa;
+	overflow: hidden;
+	height: calc(8px * var(--scale));
+	padding: calc(1px * var(--scale)) 0;
+}
+
+.playerCount span {
+	color: #555555;
+}

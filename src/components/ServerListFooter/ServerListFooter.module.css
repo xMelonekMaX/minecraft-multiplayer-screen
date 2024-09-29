@@ -1,0 +1,9 @@
+.serverListFooter {
+	z-index: 2;
+
+	display: flex;
+	align-items: center;
+	min-height: calc(var(--background-size) * var(--scale) * 2);
+
+	box-shadow: var(--footer-box-shadow);
+}

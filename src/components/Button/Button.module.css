@@ -1,0 +1,118 @@
+.button {
+	border: none;
+	padding-top: calc(1px * var(--scale) - 1px);
+}
+
+.button:focus {
+	outline: none;
+}
+
+.button.disabled,
+.button.disabled:hover {
+	color: #a0a0a0;
+	text-shadow: #282828 var(--text-shadow) var(--text-shadow);
+}
+
+/***/
+
+.smallButton {
+	background: url("../../assets/textures/buttons/small_button.png");
+	background-size: contain;
+
+	width: calc(74px * var(--scale));
+	height: calc(var(--button-height) * var(--scale));
+}
+
+.smallButton:hover {
+	background: url("../../assets/textures/buttons/small_button_hovered.png");
+	background-size: contain;
+}
+
+.smallButton:focus {
+	background: url("../../assets/textures/buttons/small_button_hovered.png");
+	background-size: contain;
+}
+
+.smallButton.disabled,
+.smallButton.disabled:hover {
+	background: url("../../assets/textures/buttons/small_button_disabled.png");
+	background-size: contain;
+}
+
+/***/
+
+.mediumButton {
+	background: url("../../assets/textures/buttons/normal_button.png");
+	background-size: contain;
+
+	width: calc(100px * var(--scale));
+	height: calc(var(--button-height) * var(--scale));
+}
+
+.mediumButton:hover {
+	background: url("../../assets/textures/buttons/normal_button_hovered.png");
+	background-size: contain;
+}
+
+.mediumButton:focus {
+	background: url("../../assets/textures/buttons/normal_button_hovered.png");
+	background-size: contain;
+}
+
+.mediumButton.disabled,
+.mediumButton.disabled:hover {
+	background: url("../../assets/textures/buttons/normal_button_disabled.png");
+	background-size: contain;
+}
+
+/***/
+
+.semiLargeButton {
+	background: url("../../assets/textures/buttons/semi_large_button.png");
+	background-size: contain;
+
+	width: calc(150px * var(--scale));
+	height: calc(var(--button-height) * var(--scale));
+}
+
+.semiLargeButton:hover {
+	background: url("../../assets/textures/buttons/semi_large_button_hovered.png");
+	background-size: contain;
+}
+
+.semiLargeButton:focus {
+	background: url("../../assets/textures/buttons/semi_large_button_hovered.png");
+	background-size: contain;
+}
+
+/* .semiLargeButton.disabled,
+.semiLargeButton.disabled:hover {
+	background: url("../../assets/textures/buttons/semi_large_button_disabled.png");
+	background-size: contain;
+} */
+
+/***/
+
+.largeButton {
+	background: url("../../assets/textures/buttons/large_button.png");
+	background-size: contain;
+
+	width: calc(var(--large-button-width) * var(--scale));
+	height: calc(var(--button-height) * var(--scale));
+}
+
+.largeButton:hover {
+	background: url("../../assets/textures/buttons/large_button_hovered.png");
+	background-size: contain;
+}
+
+.largeButton:focus {
+	background: url("../../assets/textures/buttons/large_button_hovered.png");
+	background-size: contain;
+}
+
+.largeButton.disabled,
+.largeButton.disabled:hover {
+	background: url("../../assets/textures/buttons/large_button_disabled.png");
+	background-size: contain;
+}

@@ -1,0 +1,15 @@
+.deleteConfirmationWidget {
+	margin: calc(79px * var(--scale)) 0;
+	text-align: center;
+}
+
+.deleteConfirmationWidget nav {
+	display: flex;
+	justify-content: center;
+	gap: calc(10px * var(--scale));
+	margin-top: var(--delete-confirmation-buttons-margin-top);
+}
+
+.deleteConfirmationWidget p {
+	margin-top: calc(9px * var(--scale));
+}

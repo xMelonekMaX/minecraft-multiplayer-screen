@@ -1,0 +1,7 @@
+.pingIcon {
+	display: block;
+	width: calc(10px * var(--scale));
+	height: calc(8px * var(--scale));
+	padding: calc(1px * var(--scale));
+	padding-left: 0;
+}

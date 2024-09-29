@@ -1,0 +1,8 @@
+.serverList {
+	padding: calc(2px * var(--scale));
+	text-shadow: none;
+}
+
+.serverList:focus {
+	outline: none;
+}

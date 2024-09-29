@@ -1,0 +1,43 @@
+.withTooltip {
+	height: min-content;
+}
+
+.tooltip {
+	--border-size: calc(1px * var(--scale));
+	--background-color: rgba(16.63, 0.77, 16.63, 0.95);
+
+	z-index: 3;
+	display: none;
+	color: var(--color);
+	text-shadow: var(--shadow-color) var(--text-shadow) var(--text-shadow);
+	background-color: var(--background-color);
+	padding: 0 calc(2px * var(--scale));
+	border-width: var(--border-size);
+	border-style: solid;
+	border-image: linear-gradient(
+			to bottom,
+			rgba(55, 7, 163, 0.5),
+			rgba(35, 10, 83, 0.5)
+		)
+		1;
+	box-shadow: var(--border-size) 0 var(--background-color),
+		calc(-1 * var(--border-size)) 0 var(--background-color),
+		0 var(--border-size) var(--background-color),
+		0 calc(-1 * var(--border-size)) var(--background-color);
+	margin-top: calc(-16px * var(--scale));
+	white-space-collapse: preserve;
+}
+
+.tooltip p:first-child {
+	margin-top: calc(1px * var(--scale));
+}
+
+.tooltip p {
+	margin-top: calc(-1px * var(--scale));
+}
+
+.withTooltip:hover .tooltip {
+	pointer-events: none;
+	display: block;
+	position: fixed;
+}

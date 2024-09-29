@@ -1,0 +1,35 @@
+.editServerInfoWidget {
+	margin: calc(16px * var(--scale)) 0;
+	text-align: center;
+}
+
+.editServerInfoWidget > div {
+	margin: 0 auto;
+	width: min-content;
+}
+
+.editServerInfoWidget label {
+	padding-bottom: calc(2px * var(--scale));
+	margin-top: calc(7px * var(--scale));
+}
+
+.editServerInfoWidget label:first-child {
+	padding-bottom: calc(3px * var(--scale));
+	margin-top: 0;
+}
+
+.editServerInfoWidget h2 {
+	margin-bottom: calc(25px * var(--scale));
+	text-align: center;
+}
+
+.editServerInfoWidget nav {
+	display: flex;
+	flex-direction: column;
+	gap: calc(4px * var(--scale));
+	margin-top: var(--edit-server-buttons-margin-top);
+}
+
+.editServerInfoWidget button:first-child {
+	margin-bottom: calc(18px * var(--scale));
+}
