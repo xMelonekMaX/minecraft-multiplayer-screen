@@ -1,6 +1,8 @@
 <div align="center">
   <br />
-  <img src="public/readme-logo.png" alt="logo" width="160" height="92">
+  <a href="#">
+    <img src="public/readme-logo.png" alt="logo" width="160" height="92">
+  </a>
 
   <h3 align="center">Minecraft Multiplayer Screen</h3>
 
