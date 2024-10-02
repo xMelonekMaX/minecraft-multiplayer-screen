@@ -1,6 +1,6 @@
 import React from "react";
 import { createRoot } from "react-dom/client";
-import { RouterProvider, createBrowserRouter } from "react-router-dom";
+import { Navigate, RouterProvider, createBrowserRouter } from "react-router-dom";
 import "./index.css";
 import { PlayMultiplayer } from "./views/PlayMultiplayer.tsx";
 import { DirectConnection } from "./views/DirectConnection.tsx";
@@ -15,6 +15,7 @@ const router = createBrowserRouter([
 	{
 		element: <App />,
 		path: "/",
+		errorElement: <Navigate to="/" />,
 		children: [
 			{
 				element: <PlayMultiplayer />,
