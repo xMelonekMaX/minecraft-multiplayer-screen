@@ -1,4 +1,4 @@
-const obfuscatedCharacterList: string[] = [
+export const obfuscatedCharacterList: string[] = [
 	"'",
 	",",
 	".",

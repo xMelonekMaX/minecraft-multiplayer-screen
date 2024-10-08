@@ -1,40 +1,48 @@
 {
-	"name": "minecraft-multiplayer-screen",
-	"private": true,
-	"version": "0.0.0",
-	"type": "module",
-	"scripts": {
-		"dev": "vite",
-		"build": "tsc -b && vite build",
-		"lint": "eslint .",
-		"preview": "vite preview"
-	},
-	"dependencies": {
-		"@sfirew/minecraft-motd-parser": "^1.1.3",
-		"babel-plugin-react-compiler": "0.0.0-experimental-fe484b5-20240911",
-		"eslint-plugin-react-compiler": "0.0.0-experimental-5c9a529-20240911",
-		"html-react-parser": "^5.1.16",
-		"react": "19.0.0-rc-d6cb4e77-20240911",
-		"react-dom": "19.0.0-rc-d6cb4e77-20240911",
-		"react-router-dom": "^6.26.2"
-	},
-	"overrides": {
-		"@types/react": "npm:types-react@rc",
-		"@types/react-dom": "npm:types-react-dom@rc"
-	},
-	"devDependencies": {
-		"@eslint/js": "^9.9.0",
-		"@types/react": "npm:types-react@rc",
-		"@types/react-dom": "npm:types-react-dom@rc",
-		"@vite-pwa/assets-generator": "^0.2.6",
-		"@vitejs/plugin-react": "^4.3.1",
-		"eslint": "^9.9.0",
-		"eslint-plugin-react-hooks": "^5.1.0-rc.0",
-		"eslint-plugin-react-refresh": "^0.4.9",
-		"globals": "^15.9.0",
-		"typescript": "^5.5.3",
-		"typescript-eslint": "^8.0.1",
-		"vite": "^5.4.1",
-		"vite-plugin-pwa": "^0.20.5"
-	}
+  "name": "minecraft-multiplayer-screen",
+  "private": true,
+  "version": "0.0.0",
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "tsc -b && vite build",
+    "lint": "eslint .",
+    "preview": "vite preview",
+    "test": "vitest"
+  },
+  "dependencies": {
+    "@sfirew/minecraft-motd-parser": "^1.1.3",
+    "babel-plugin-react-compiler": "0.0.0-experimental-fe484b5-20240911",
+    "eslint-plugin-react-compiler": "0.0.0-experimental-5c9a529-20240911",
+    "html-react-parser": "^5.1.16",
+    "react": "19.0.0-rc-d6cb4e77-20240911",
+    "react-dom": "19.0.0-rc-d6cb4e77-20240911",
+    "react-router-dom": "^6.26.2"
+  },
+  "overrides": {
+    "@types/react": "npm:types-react@rc",
+    "@types/react-dom": "npm:types-react-dom@rc"
+  },
+  "devDependencies": {
+    "@eslint/js": "^9.9.0",
+    "@playwright/test": "^1.47.2",
+    "@testing-library/jest-dom": "^6.5.0",
+    "@testing-library/react": "^16.0.1",
+    "@testing-library/user-event": "^14.5.2",
+    "@types/node": "^22.7.4",
+    "@types/react": "npm:types-react@rc",
+    "@types/react-dom": "npm:types-react-dom@rc",
+    "@vite-pwa/assets-generator": "^0.2.6",
+    "@vitejs/plugin-react": "^4.3.1",
+    "eslint": "^9.9.0",
+    "eslint-plugin-react-hooks": "^5.1.0-rc.0",
+    "eslint-plugin-react-refresh": "^0.4.9",
+    "globals": "^15.9.0",
+    "jsdom": "^25.0.1",
+    "typescript": "^5.5.3",
+    "typescript-eslint": "^8.0.1",
+    "vite": "^5.4.1",
+    "vite-plugin-pwa": "^0.20.5",
+    "vitest": "^2.1.2"
+  }
 }

@@ -28,3 +28,7 @@
 * html-react-parser (https://www.npmjs.com/package/html-react-parser)
 * Minecraft TOP - Status API (https://docs.mcsv.top/en/)
 * minecraft-motd-parser (https://www.npmjs.com/package/@sfirew/minecraft-motd-parser)
+
+* Vitest
+* React Testing Library
+* Playwright

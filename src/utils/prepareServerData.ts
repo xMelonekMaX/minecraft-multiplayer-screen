@@ -4,7 +4,7 @@ import motdParser from "@sfirew/minecraft-motd-parser";
 import { getColorFromStyle } from "./getColorFromStyle";
 import { addObfuscatedStyle } from "./addObfuscatedStyle";
 
-export function getServerData(response: ServerResponse | null) {
+export function prepareServerData(response: ServerResponse | null) {
 	let motd;
 	let serverLogo: string | undefined | null;
 	let onlinePlayers;

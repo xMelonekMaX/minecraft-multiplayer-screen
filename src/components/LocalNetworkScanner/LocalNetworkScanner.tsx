@@ -5,7 +5,7 @@ const frames = ["O o o", "o O o", "o o O", "o O o"];
 
 export function LocalNetworkScanner() {
 	const [animationFrame, setAnimationFrame] = useState(0);
-	const intervalRef = useRef<number>(null);
+	const intervalRef = useRef<NodeJS.Timeout>(null);
 
 	if (intervalRef.current === null) {
 		intervalRef.current = setInterval(() => {

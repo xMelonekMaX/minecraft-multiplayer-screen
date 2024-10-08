@@ -17,11 +17,9 @@ export function Button({
 	const { playSound } = useWithSound(buttonSound);
 
 	function handleClick(event: React.MouseEvent<HTMLButtonElement>) {
+		playSound();
 		if (onClick) {
 			onClick(event);
-		}
-		if (!disabled) {
-			playSound();
 		}
 	}
 
@@ -43,11 +41,7 @@ export function Button({
 	if (disabled) className += ` ${styles.disabled}`;
 
 	return (
-		<button
-			className={className}
-			tabIndex={disabled ? -1 : 0}
-			onClick={handleClick}
-		>
+		<button className={className} onClick={handleClick} disabled={disabled}>
 			{children}
 		</button>
 	);

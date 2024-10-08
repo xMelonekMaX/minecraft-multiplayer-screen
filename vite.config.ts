@@ -1,4 +1,4 @@
-import { defineConfig } from "vite";
+import { defineConfig } from "vitest/config";
 import { VitePWA } from "vite-plugin-pwa";
 import react from "@vitejs/plugin-react";
 
@@ -13,8 +13,8 @@ export default defineConfig({
 		VitePWA({
 			registerType: "autoUpdate",
 			workbox: {
-				globPatterns: ['**/*.{js,css,html,ico,png,svg,eot,ttf,woff,woff2,mp3}']
-			  },
+				globPatterns: ["**/*.{js,css,html,ico,png,svg,eot,ttf,woff,woff2,mp3}"],
+			},
 			manifest: {
 				name: "Minecraft Multiplayer Screen",
 				short_name: "Server List",
@@ -26,4 +26,16 @@ export default defineConfig({
 			},
 		}),
 	],
+	test: {
+		environment: "jsdom",
+		include: ["**/tests/**/*.{test,spec}.{js,mjs,cjs,ts,mts,cts,jsx,tsx}"],
+		exclude: [
+			"**/node_modules/**",
+			"**/dist/**",
+			"**/cypress/**",
+			"**/.{idea,git,cache,output,temp}/**",
+			"**/tests/e2e/**",
+		],
+		setupFiles: "./tests/testSetup.ts",
+	},
 });
