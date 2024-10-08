@@ -29,6 +29,7 @@
 * Minecraft TOP - Status API (https://docs.mcsv.top/en/)
 * minecraft-motd-parser (https://www.npmjs.com/package/@sfirew/minecraft-motd-parser)
 
+## Testing Tools
 * Vitest
 * React Testing Library
 * Playwright
