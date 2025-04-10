@@ -1,7 +1,7 @@
 <div align="center">
   <br />
   <a href="#">
-    <img src="assets/readme-logo.png" alt="logo" width="160" height="92">
+    <img src="src/assets/readme-logo.png" alt="logo" width="160" height="92">
   </a>
 
   <h3 align="center">Minecraft Multiplayer Screen</h3>
@@ -23,12 +23,12 @@
 ## 🎥 Showcase
 
 <div align="center">
-  <img src="assets/multiplayer-screen.webp" alt="multiplayer screen" width="412" height="444">
-  <img src="assets/add-server-screen.webp" alt="add server screen" width="412" height="444">
+  <img src="src/assets/multiplayer-screen.webp" alt="multiplayer screen" width="412" height="444">
+  <img src="src/assets/add-server-screen.webp" alt="add server screen" width="412" height="444">
 </div>
 <br />
 Original Minecraft 1.20.4:
-<img src="assets/minecraft-window.webp" alt="minecraft window">
+<img src="src/assets/minecraft-window.webp" alt="minecraft window">
 <br />
 
 ## 🚀 Getting Started
