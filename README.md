@@ -9,15 +9,15 @@
   <p align="center">
     Check server statuses without launching Minecraft!
     <br />
-    <a href="https://multiplayer.xmelonekmax.pl"><strong>Open the app »</strong></a>
+    <a href="https://multiplayer.hubtale.net"><strong>Open the app »</strong></a>
   </p>
 </div>
 
 ## 🧑‍💻 Usage
 
-<a href="https://multiplayer.xmelonekmax.pl">`multiplayer.xmelonekmax.pl`</a> - Show your server list
+<a href="https://multiplayer.hubtale.net">`multiplayer.hubtale.net`</a> - Show your server list
 
-<a href="https://multiplayer.xmelonekmax.pl/hypixel.net">`multiplayer.xmelonekmax.pl/hypixel.net`</a> - Add the server & show your updated server list
+<a href="https://multiplayer.hubtale.net/hypixel.net">`multiplayer.hubtale.net/hypixel.net`</a> - Add the server & show your updated server list
 <br /><br />
 
 ## 🎥 Showcase
