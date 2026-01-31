@@ -64,3 +64,6 @@ The app will be available at [http://localhost:5173](http://localhost:5173)
 - Vitest
 - React Testing Library
 - Playwright
+
+## ☁️ Hosting
+- Vercel
